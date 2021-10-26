@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #272822;
+}
+
+
+header > .containermain > .polaroidmain > .mainphoto{
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+header > .containermain > .polaroidmain > h1{
+    margin-top: -300px;
+    text-align: center;
+    color: white;
+}
+
+header > .containermain > .polaroidmain > p{
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 700px;
+    color: white;
+}
+
+header > .containermain > nav{
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+header > .containermain > nav > a{ 
+    color: white;
+    text-decoration: none;
+    
+    background-color: #272822;
+    border: 1px solid #50504e;
+    
+    padding: 15px;
+}
+
+header > .containermain > nav > a:hover{ 
+    background-color: #eeeeee;
+    color: #272822;
+}
+
+/*-----------------------------------------------*/
+
+main > .text{
+    background-color: white;
+    padding: 1px 0px 20px 0px;
+}
+
+
+main > div > h2{
+    margin-top: 145px;
+    text-align: center;
+}
+
+main > div > p{
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
+    min-width: 300px;
+    max-width: 700px;
+    columns: 2;
+}
+
+/* Parte das imagens do site */
+
+.container{
+    margin: auto;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.polaroid{
+    background-color: whitesmoke;
+    padding: 0px 0px 65px;
+}
+
+.photo{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caption{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.caption > p{
+    margin: auto;
+    margin-top: 40px;
+    width: 220px;
+}
+
+/*-----------------------------------------------------*/
+
+.second{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.second > h2{
+    padding-top: 30px;
+}
+
+.second > p{
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+/* Parte do Footer */
+
+.containertwo{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.blue{
+    background-color: #2690D4;
+    padding: 5px 20px 20px 20px;
+}
+
+.gray{
+    background-color: #333333;
+    padding: 5px 20px 20px 20px;
+}
+
+.textfooter{
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.grid{
+    background-color: black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+    padding: 30px;
+    color: white;
+}
+
+.grid > div > a{
+    text-decoration: none;
+    color: #2690D4;
+    font-weight: bold;
+}
+
+@media (max-width: 755px){
+    .container{
+       margin: auto;
+       display: inline-block;
+       width: 100%;
+       padding: 20px;   
+    }
+    .photo{
+        height: 250px;
+    }
+    .polaroid{
+        margin: 20px 0px 20px 0px;
+    }
+    .containertwo{
+        margin: auto;
+        display: inline-block;
+        width: 100%;
+    }
+    .grid{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+    @media (max-width: 515px){
+        .text{
+            margin-top: -40px;
+        }
+    }
+
